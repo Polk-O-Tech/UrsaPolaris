@@ -484,42 +484,6 @@ fleet "wrun"
 	variant
 		"Kestrel" 5
 
-#governments
-government " Republic "
-	swizzle 0
-	color .91 .42 .09
-	"player reputation" 2
-
-government "Ursa Polaris"
-	swizzle 3
-	"player reputation" 1000
-	"attitude toward"
-		"Republic" .01
-		"Merchant" .025
-		"Free Worlds" .01
-		"Pirate" -.3
-		" Pirate " -.3
-	"bribe" .1
-	"fine" 0
-	"friendly hail" "friendly civilian"
-
-government " Pirate "
-	swizzle 6
-	color .78 0 0
-		"player reputation" -1000
-	"attitude toward"
-		"Pirate" .25
-		"Merchant" -.015
-		"Syndicate" -.01
-		"Author" -.01
-		"Free Worlds" -.01
-		"Republic" -.01
-		"Independent" -.01
-		"Ursa Polaris" -.2
-	"bribe" .05
-	"fine" 0
-	"hostile hail" "hostile pirate"
-
 #ship names
 phrase "upshipnames"
 	word

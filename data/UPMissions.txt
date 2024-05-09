@@ -22,13 +22,13 @@ mission "OS1"
 		has "event: pug flee"
 	npc waiting
 		system Rigel
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Pirates"
 		personality disables staying
 	npc waiting
 		system Danoa
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Merchants"
 		personality disables staying
@@ -99,7 +99,7 @@ mission "OS2"
 		dialog "You have reached <planet>, but you left James in the Marius behind! Better depart and wait for him to arrive in this star system."
 	npc evade
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Pirates"
@@ -132,11 +132,11 @@ mission "OS3"
 		ship "Corvette (James)" "Marius"
 	npc
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Core Pirates"
 	npc
 		personality entering
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Northern Pirates"
 		fleet "Large Core Pirates"
 	on offer
@@ -349,13 +349,13 @@ mission "OS7"
 		dialog "You have reached <planet>, but you left some of your fleet behind! Better depart and wait for them to arrive in this star system."
 	npc
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Southern Pirates"
 		fleet "Large Core Pirates"
 		fleet "Large Northern Pirates"
 	npc
 		personality disables entering
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Small Southern Pirates"
 		fleet "Large Northern Pirates"
 
@@ -422,7 +422,7 @@ mission "OS10C"
 	waypoint Vindemiatrix
 	npc evade
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
 		system "Cor Caroli"
@@ -467,11 +467,11 @@ mission "OS10E"
 	waypoint Aldhibain
 	npc
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Southern Pirates"
 	npc
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
 		system Alniyat
@@ -599,7 +599,7 @@ mission "OS13"
 		ship "Argosy" "Chilly Bruin"
 	npc
 		personality disables entering
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
@@ -661,7 +661,7 @@ mission "OS15W"
 				accept
 	npc
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
@@ -693,7 +693,7 @@ mission "OS15F"
 				accept
 	npc
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
@@ -728,7 +728,7 @@ mission "OS16"
 
 	npc evade
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Northern Pirates"
 		fleet "Large Core Pirates"
 		fleet "Small Southern Pirates"
@@ -737,7 +737,7 @@ mission "OS16"
 		fleet "Large Southern Pirates"
 	npc evade
 		personality disables entering
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
@@ -747,7 +747,7 @@ mission "OS16"
 
 	npc evade
 		personality disables entering
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Pirates"
 		fleet "Small Northern Pirates"
@@ -757,7 +757,7 @@ mission "OS16"
 
 	npc evade
 		personality disables entering
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
 		fleet "Small Southern Pirates"
@@ -847,7 +847,7 @@ mission "OS18H"
 	blocked "You require 500 cargo space free to bring stock back to Ursa Polaris Station."
 	npc
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Core Pirates"
 		fleet "Large Core Pirates"
 		fleet "Large Core Pirates"
@@ -925,7 +925,7 @@ mission "OS20H"
 			`	"We'll have the Ionic Afterburner for sale in a few weeks."`
 	npc
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Core Pirates"
 		fleet "Large Core Pirates"
 		fleet "Large Core Pirates"
@@ -950,7 +950,7 @@ mission "OS18A"
 		ship "Argosy" "Chilly Bruin"
 	npc
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Pirates"
@@ -997,7 +997,7 @@ mission "OS18V"
 	blocked "You require 500 cargo space free to bring stock back to Ursa Polaris Station."
 	npc
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Pirates"
@@ -1106,7 +1106,7 @@ mission "OS20V"
 			`	"We'll have some new Deep Sky outfits for sale in a few weeks."`
 	npc
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Pirates"
@@ -1122,7 +1122,7 @@ mission "OS18W"
 	blocked "You require 500 cargo space free to bring stock back to Ursa Polaris Station."
 	npc
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
 		fleet "Large Core Pirates"
@@ -1281,7 +1281,7 @@ mission "OS19"
 			`You transmit the blueprints and a message to Barmy: "Prototype is delivered - keep in touch."`
 	npc
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
@@ -1293,7 +1293,7 @@ mission "OS19"
 		fleet "Large Southern Pirates"
 	npc
 		personality disables entering
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
@@ -1393,7 +1393,7 @@ mission "OS22N"
 			`	James meets you at your airlock, "Great work - I hope you didn't have too much trouble with pirates.  We'll start selling the warheads to Ursa Polaris staff in a month or so.`
 	npc
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
 		fleet "Large Northern Pirates"
@@ -1454,7 +1454,7 @@ mission "OS22"
 
 	npc
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Pirates"
@@ -1464,7 +1464,7 @@ mission "OS22"
 		system Betelgeuse
 	npc
 		personality disables waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Pirates"
 		fleet "Large Northern Pirates"

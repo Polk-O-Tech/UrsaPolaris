@@ -23,7 +23,7 @@ mission "upsf1"
 		set "UPSpriteUpdate26feb2016"
 	npc board
 		personality fleeing waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Small Southern Pirates"
 		system Betelgeuse
 mission "upsf2"
@@ -39,7 +39,7 @@ mission "upsf2"
 		set "UPSpriteUpdate26feb2016"
 	npc board
 		personality fleeing waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Small Southern Pirates"
 		system Betelgeuse
 mission "upsf3"
@@ -55,7 +55,7 @@ mission "upsf3"
 		set "UPSpriteUpdate26feb2016"
 	npc board
 		personality fleeing waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Small Southern Pirates"
 		system Betelgeuse
 mission "upsf4"
@@ -71,7 +71,7 @@ mission "upsf4"
 		set "UPSpriteUpdate26feb2016"
 	npc board
 		personality fleeing waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Small Southern Pirates"
 		system Betelgeuse
 mission "upsf5"
@@ -87,7 +87,7 @@ mission "upsf5"
 		set "UPSpriteUpdate26feb2016"
 	npc board
 		personality fleeing waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Small Southern Pirates"
 		system Betelgeuse
 mission "upsf6"
@@ -103,7 +103,7 @@ mission "upsf6"
 		set "UPSpriteUpdate26feb2016"
 	npc board
 		personality fleeing waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Small Southern Pirates"
 		system Betelgeuse
 mission "upsf0"
@@ -118,6 +118,6 @@ mission "upsf0"
 		set "UPSpriteUpdate26feb2016"
 	npc board
 		personality fleeing waiting
-		government " Pirate "
+		government "UP_Pirate"
 		fleet "Small Southern Pirates"
 		system Betelgeuse
