@@ -10,7 +10,7 @@ Start by finding James where you left him off during the tutorial.
 
 Me (a clueless firsttime ES modder) poking a bear.
 
-No but really, I intended to update this plugin because I love it, but after looking over the code and trying to understand it (with help form the wonderful https://github.com/endless-sky/endless-sky/wiki), I'm simply amazed at the ability of ES to be backwards compatible. I made miniscule changes, mostly to make the code prettier, but everything should just work. 
+No but really, I intended to update this plugin because I love it, but after looking over the code and trying to understand it (with help from the wonderful https://github.com/endless-sky/endless-sky/wiki), I'm simply amazed at the ability of ES to be backwards compatible. I made miniscule changes, mostly to make the code prettier, but everything should just work. 
 
 - [ ] Look over outfits to ensure none got lost
 - [ ] add alien outfits new since 0.9.16
