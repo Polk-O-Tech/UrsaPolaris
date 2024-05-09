@@ -1948,7 +1948,7 @@ mission "OSC3"
 		payment 350000000
 	npc kill
 		personality uninterested staying waiting
-		government " Republic "
+		government "UP_Republic"
 		ship "Scout" "AdVenture"
 		dialog `Stone cold, James turns to you from an observation seat on the bridge, "Let's go to <planet>."`
 

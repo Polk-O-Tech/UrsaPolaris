@@ -1,5 +1,6 @@
 #governments
-government " Republic "
+government "UP_Republic"
+	"display name" "Republic"
 	swizzle 0
 	color .91 .42 .09
 	"player reputation" 2
