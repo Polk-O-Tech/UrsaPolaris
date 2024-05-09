@@ -38,9 +38,9 @@ mission "OS1"
 		government "Merchant"
 		ship "Corvette (James)" "Marius"
 	on offer
-		"reputation:  Pirate " = -1000
+		"reputation: UP_Pirate" = -1000
 		conversation
-			`	When you walk into the bar,  you're approached by a man, who looks very glad to see you. "I remember you," he says. "You had just bought your first ship, and I gave you your first job.  I never forget a face, certainly not one that's been in the news as much as yours..." he continues.  "Listen, I'm not old enough to be this sedentary.  It was nice to slow down for a while, but I'm itchy to be out there" he looks upward.  "I've got a ship that was boobytrapped to be impenetrable by anyone but me abandoned in Danoa.  It's cloaking device recently failed, and the pirates have been trying to loot it.  Won't pay much to help me, but I've got a bigger plan that I think you might like."  Want to take an old timer out for an adventure with your fleet?`
+			`	When you walk into the bar, you're approached by a man, who looks very glad to see you. "I remember you," he says. "You had just bought your first ship, and I gave you your first job. I never forget a face, certainly not one that's been in the news as much as yours..." he continues. "Listen, I'm not old enough to be this sedentary. It was nice to slow down for a while, but I'm itchy to be out there" he looks upward.  "I've got a ship that was boobytrapped to be impenetrable by anyone but me abandoned in Danoa.  It's cloaking device recently failed, and the pirates have been trying to loot it.  Won't pay much to help me, but I've got a bigger plan that I think you might like."  Want to take an old timer out for an adventure with your fleet?`
 			choice
 				`	"Sure!"`
 					goto os1a
@@ -50,7 +50,7 @@ mission "OS1"
 			`	"Well.  That's a little disappointing. I'll be here if you change your mind..." he says as you see him visibly shrink along with his excitement.`
 				defer
 			label os1a
-			`	"Glad to hear it," he says. "The <npc> was outfitted with the latest and greatest of the day, and some stuff that most people still don't know exists - I'm sure it's still pretty vicious by today's standards when it's up and running again.  I don't want to tell you what we'll lose if the pirates destroy it before we get there."`
+			`	"Glad to hear it," he says. "The <npc> was outfitted with the latest and greatest of the day, and some stuff that most people still don't know exists - I'm sure it's still pretty vicious by today's standards when it's up and running again. I don't want to tell you what we'll lose if the pirates destroy it before we get there."`
 				accept
 	on complete
 		payment 10000
