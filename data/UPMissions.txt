@@ -1484,15 +1484,15 @@ mission "OSRemnant"
 		has "license: Remnant"
 	on offer
 		conversation
-			`	You find James at a table next to the "Gallileo".  As you approach, he says "The bar gotthat '09 Bounty Prag'ga - totally worth the wait - vintage of a lifetime.  Trying now to get them to find the '10 - supposedly just as good, but slightly different."`
-			`	"But on to business!  Now that we've got a supply convoy going to the Hai, we've got these Quantum Keystones that let our convoys visit the Remnants.  Head over to their space, tell them what we're doing, and maybe we can start an exchange."`
+			`	You find James at a table next to the "Gallileo".  As you approach, he says "The bar got that '09 Bounty Prag'ga - totally worth the wait - vintage of a lifetime.  Trying now to get them to find the '10 - supposedly just as good, but slightly different."`
+			`	"But on to business!  Now that we've got a supply convoy going to the Hai, we've got enough Quantum Keystones to start thinking about the Remnants.  Head over to their space, tell them what we're doing, and maybe we can start an exchange."`
 			`	"Give them <payment> and let them know our freighters will be a few days behind your payment."`
 				accept
 	on complete
 		payment -100000000
 		event "UPS Remnant Outfits" 14
 		conversation
-			`	You spend hours negotiating with the Remnants, who seem very happy with the potential of a variety of outfits come their way from Ursa Polaris, are hesitant to send so much evidence of their existence back to Human space.  Eventually, you settle on branding Ursa Polaris Inc.'s "new line of outfits" as "Remnants of alien technology", and selling them only to vetted, licensed individuals (requiring a blood sample scan, among other precautions)."`
+			`	You spend hours negotiating with the Remnants. While they are intrigued by the potential of a variety of outfits coming their way from Ursa Polaris, they are hesitant to send so much evidence of their existence back to Human space.  Eventually, you settle on branding Ursa Polaris Inc.'s "new line of outfits" as "Remnants of alien technology", and selling them only to vetted, licensed individuals (requiring a blood sample scan, among other precautions)."`
 	on visit
 		dialog `You require <payment> to negotiate and establish an Ursa Polaris contract with the Remnants.  Return when you have it.`
 #
@@ -1587,7 +1587,7 @@ mission "OS24"
 			`	"Well, what did you think?"`
 			choice
 				`Same as before;  I won't be able to really assess it until I get my hands on it.`
-				`The <npc> wasn't carrying enough of the weapon to really challenge me in the <ship>, but I can see how a Heavy Warship could really benefit from carrying a few of that gun.`
+				`The <npc> wasn't carrying enough of the weapon to really challenge me in the <ship>, but I can see how a Heavy Warship could really benefit from carrying a few of those guns.`
 				`You guys have made another weapon I'll be glad to equip as soon as it's available.`
 			`	"It'll be a month or so until we get production rolling.  You can get your hands on them then."`
 #
@@ -1699,7 +1699,7 @@ mission "OS27"
 			`	"Well, now the people that need to know the way, we can have a few freighters jump from their escorts in Hatysa into Wanderer space, pick up stock, and return to their escorts before coming back to civilization where, certain people are paid to make sure we're not looked at too closely, and those goods can join our supply network through Ada."`
 			`	"I assure you that we'll need all of that cash to finish building the escort fleet up, and probably more to keep the feds from looking too closely.  At least for the moment, these outfits aren't going to be publicly available, but you'll be able to upgrade your ships in a couple of weeks, and Ursa Polaris ships will employ them more.  The White Sun Reactor was of particular interest to Malcolm, and he's leading a team on a renewed project."`
 	on visit
-		dialog `You require 3 Jump Drives and 50M credits to continue the Wanderer outfit stocking missions.  Return when you meet these conditions.`
+		dialog `You require 3 Jump Drives and 50M credits to set up a supply convoy.  Return when you have them.`
 #
 mission "OS28"
 	name "Ion Beam Testing"
@@ -1772,12 +1772,12 @@ mission "OS29"
 	on complete
 		conversation
 			`	After you dock, you rush to the docking gantry for the Albino Bruin, where the three crew are debarking while a work crew is boarding.  You walk with the crew back to the Gallileo to meet with James.`
-			`	Albino Bruin's crew indicates that there was a flash of light and a powerful explosion as they were initiating their jump in Wei.  When they arrived in Holeb, they were disabled, their radio and half of their other systems were fried, and the White Kodiak was not visible.`
+			`	Albino Bruin's crew indicates that there was a flash of light and a powerful explosion as they were initiating their jump in Wei.  When they arrived in Holeb, they were disabled, their comms and half of their other systems were fried, and the White Kodiak was not visible.`
 			`	James thanks the Albino Bruin crew, and instructs them to get to medical for a once-over.`
 			`	Malcolm, who has been pale and silent until now, speaks up, "I'd like to see what sensor data our crew can retrieve from the Albino Bruin, but it sounds like we may not be able to get the Polar Core to make unlinked hyperspace jumps."`
 			choice
 				`	"Polar Core?"`
-			`	Malcolm seems almost surprised you hand't heard about it.  "We've managed to create and contain some dark matter.  Artificial gravity systems and our Inertial Dampers were key components, but the last piece of the puzzle came in the White Sun Reactor."`
+			`	Malcolm seems almost surprised you hadn't heard about it.  "We've managed to create and contain some dark matter.  Artificial gravity systems and our Inertial Dampers were key components, but the last piece of the puzzle came in the White Sun Reactor."`
 			`	He continues, "It's enormous" he boasts, "We have to land most ships we're putting one into on Hope to move all the other outfits around so that there's room for it.`
 			`	Besides getting it to generate lots of power and even store some of it while generating next to no heat, we've managed to get it to do a few other tricks.  For starters, we got it to move the ship - not much, but a little nudge, and it doesn't take up engine capacity.  Then we got it to act like a navigational deflector, increasing the ship's maximum speed.  We even got it to make hyperspace jumps with a little speed along links, but you've seen the effects of our latest attempt to make it jump without a link.`
 			choice
