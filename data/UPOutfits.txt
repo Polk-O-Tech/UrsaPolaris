@@ -399,12 +399,12 @@ outfit "Polar Core"
 	"energy capacity" 6000
 	"jump speed" 3
 	"hyperdrive" 1
-	"thrust" 15.4
+	"thrust" 23.1
 	"thrusting energy" .9
 	"thrusting heat" 7
-	"turn" 687
+	"turn" 1030.5
 	"turning energy" .8
 	"turning heat" 7.4
-	"drag" -0.8
+	"drag" -0.8 #is this fine for 0.10.7 ? idk WIP/TEST
 	"capture defense" 20
 	description "Ursa Polaris' crowning outfit uses inertial damping and artificial gravity to contain and manipulate a mass of dark matter with varying results; immense power generation, floating hyperdrive, minor thrust, navigational deflector, and a bit power storage - with very low heat footprint. Of course, actually producing and manipulating dark matter is not without expense, which is reflected in the price point. Note: The dark matter containment field of the Polar Core resonates with your ship's defensive shields, boosting their total capacity. WARNING: THE ABSENCE OF DEFENSIVE SHIELD HARMONICS WILL DESTABILIZE DARK MATTER CONTAINMENT. Unchecked dark matter containment failure results in catastrophic hull integrity collapse. Ship owners equip this outfit at their own risk."
