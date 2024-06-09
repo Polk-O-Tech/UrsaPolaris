@@ -405,6 +405,7 @@ event "ionbeam available"
 event "UPStock Polar Core available"
 	outfitter "Ursa Polaris"
 		"Polar Core"
+		"Inertial Damper"
 
 
 planet WeiMirzamExpressWay

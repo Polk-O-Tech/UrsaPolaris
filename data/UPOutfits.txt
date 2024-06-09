@@ -309,7 +309,7 @@ outfit "S.A.R.C."
 	"bunks" -2
 	"mass" 3
 	unplunderable 1
-	description "Systems Automation and Robotic Crew utilizes small robots and systems integration to reduce your ship's reliance on humans, and perform minor hull repairs. The robot maintenance stations occupy quarters that crew would have formerly used, rather than valuable tonnage. The robots are equipped with boarding suppression equipment which functions as long as there's crew to rearm them, but they cannot leave the ship. Finally, S.A.R.C. depends on the ship's shield regenerators as its communications routers, and will improve their efficiency when installed."
+	description "Systems Automation and Robotic Crew utilizes small robots and systems integration to reduce your ship's reliance on humans and can also perform minor hull repairs. The robot maintenance stations occupy quarters that crew would have formerly used, rather than valuable tonnage. The robots are equipped with boarding suppression equipment which functions as long as there's crew to rearm them, but they cannot leave the ship. Finally, S.A.R.C. depends on the ship's shield regenerators as its communications routers, and will improve their efficiency when installed."
 
 outfit "Ion Beam"
 	category "Guns"
@@ -379,10 +379,10 @@ outfit "Inertial Damper"
 	category "Systems"
 	cost 150000
 	thumbnail "outfit/inertialdamper"
-	"mass" -2
+	"mass" -2 #maybe rebalance WIP/TEST
 	"outfit space" -1
 	"energy generation" -.1
-	description "Inertial Dampers reduce the effective mass of your ship, increasing turning rate and acceleration, but reducing overall heat capacity in the process. The individual inertial damping generator units are small enough to keep hull stresses nominal, so multiple units are generally distributed all over the ship."
+	description "Originally developed for use in the Polar Core, Inertial Dampers reduce the effective mass of your ship, increasing turning rate and acceleration, but reducing overall heat capacity in the process. The individual inertial damping generator units are small enough to keep hull stresses nominal, so multiple units are generally distributed all over the ship."
 
 outfit "Polar Core"
 	category "Power"
