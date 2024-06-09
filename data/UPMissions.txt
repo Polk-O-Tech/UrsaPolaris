@@ -1839,11 +1839,14 @@ mission "OSC"
 	destination "Ursa Polaris Station"
 	name "Speak to James on <planet>"
 	description "James has beckoned you to <destination> by <date>."
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 	deadline 22
 	to offer
 		has "OS20: done"
 		random = 42
 		"net worth" > 999999999
+		"credits" >= 900000000 #to ensure you can actually successfully do the mission, without going throught the files to anticipate ridiculous expenses
 	on offer
 		payment -50000000
 		dialog
