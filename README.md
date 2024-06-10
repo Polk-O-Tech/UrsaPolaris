@@ -13,7 +13,7 @@ Me (a clueless firsttime ES modder) poking a bear.
 No but really, I intended to update this plugin because I love it, but after looking over the code and trying to understand it (with help from the wonderful https://github.com/endless-sky/endless-sky/wiki), I'm simply amazed at the ability of ES to be backwards compatible. I made miniscule changes, mostly to make the code prettier, but everything should just work. 
 
 - [x] look over outfits to ensure none got lost (+small code updates i guess)
-- [ ] coalition outfits
+- [x] coalition outfits (still to be tested)
 - [ ] Redo WeiMiExpressway/end of UP missions
 - [ ] Salvage Missions for non-purchasable aliens
 - [ ] Patch for Midnight
