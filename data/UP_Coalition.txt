@@ -1,0 +1,50 @@
+# Copyright (c) 2024 by PolkTech
+# 
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this mod. If not, see <https://www.gnu.org/licenses/>.
+
+mission "OSCoalition"
+	name "Negotiate UPS contract with the Coalition"
+	description "Travel to <destination> with <payment> to negotiate a contract for alien outfits"
+	destination "Ring of Friendship"
+	source "Ursa Polaris Station"
+	clearance
+	to offer
+		has "OS22: done"
+		has "license: Coalition"
+        has "OSRemnant: done"
+	on offer
+		conversation
+			`	As you land, James invites you to meet at the recently opened "Nourish Bistro", supposedly a local restaurant`
+			`	While the "Nourish Bistro" turns out to be little more than a hole in the (asteroid) wall bar, the sandwiches they serve are nonetheless delicious. James regales you with tales from his long ago adventures, before returning to more current affairs.`
+			`	"So, have you meet any new aliens? You know i'm alway itching to expand our offerings." `
+            choice 
+                `	(Tell him about the Coalition)`
+                goto yes
+                `	"No I haven't sorry"`
+            `	"Ah no worries, I suppose we already have quite a wide range of products anyway "`
+                decline
+            label yes
+                `	It's a shame we can't get their weapons, considering they fought the Quarg, they ought to be fierce. Well, at least it should be easy enough to convince them to sell us some of their civilian outfits. <payment> should be enough for some initial shipments `
+				accept
+	on complete
+		payment -50000000
+		event "UPS Coalition Outfits" 7
+		conversation
+			`	The Heliarchs are indeed quite enthuasisatic about further undermining the isolation imposed by the Quarg. But their strong desire to ensure equal opportunity among the Arach, Saryd and Kimek drags out negotiations significantly.`
+            `   Eventually you come to an agreement where shipments will rotate between the species. While this will no doubt complicate your supply lines, it's the best you're going to get. `
+	on visit
+		dialog `You require <payment> to negotiate and establish an Ursa Polaris contract with the Coalition.  Return when you have it.`
+
+event "UPS Coalition Outfits"
+    planet "Ursa Polaris Station"
+ 		outfitter "Coalition Basics"
+        outfitter "Coalition Advanced"
