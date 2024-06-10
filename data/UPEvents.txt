@@ -494,18 +494,19 @@ event "WeMiExWa"
 		fleet "Large Northern Pirates" 2000
 		fleet "UPSRnD" 900
 
-mission "0.9.9 outfits"
-	invisible
-	landing
-	destination "Ursa Polaris Station"
-	to offer
-		has "event: Ursa Polaris Complete"
-	on offer
-		event "basic 0.9.9 outfits"
-		fail
+#deprected as of June 2024
+# mission "0.9.9 outfits"
+# 	invisible
+# 	landing
+# 	destination "Ursa Polaris Station"
+# 	to offer
+# 		has "event: Ursa Polaris Complete"
+# 	on offer
+# 		event "basic 0.9.9 outfits"
+# 		fail
 
-event "basic 0.9.9 outfits"
-	planet "Ursa Polaris Station"
-		outfitter "UPSStock"
-		outfitter "Ursa Polaris"
-		outfitter "Pirate Outfits"	
+# event "basic 0.9.9 outfits"
+# 	planet "Ursa Polaris Station"
+# 		outfitter "UPSStock"
+# 		outfitter "Ursa Polaris"
+# 		outfitter "Pirate Outfits"	
