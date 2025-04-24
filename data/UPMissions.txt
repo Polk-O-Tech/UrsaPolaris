@@ -63,6 +63,59 @@ mission "OS1"
 	on visit
 		dialog "You have reached <planet>, but you left James in the <npc> behind! Better depart and wait for him to arrive in this star system."
 
+#added to ensure intro is not mandatory/to prevent issues with alternate start plugins
+mission "OS1_alternate"
+	name "Stranded Ship"
+	description "Get James onto the <npc>, which is stranded in the Danoa system, and escort it safely to <destination>."
+	source Hestia
+	waypoint Danoa
+	destination Farpoint
+	passengers 1
+	to offer
+		not "Intro [0]: done"
+		has "event: pug flee"
+	npc waiting
+		system Rigel
+		government "UP_Pirate"
+		fleet "Large Northern Pirates"
+		fleet "Large Northern Pirates"
+		personality disables staying
+	npc waiting
+		system Danoa
+		government "UP_Pirate"
+		fleet "Large Northern Pirates"
+		fleet "Large Northern Merchants"
+		personality disables staying
+	npc accompany save
+		system Danoa
+		personality escort disables derelict timid
+		government "Merchant"
+		ship "Corvette (James)" "Marius"
+	on offer
+		"reputation: UP_Pirate" = -1000
+		conversation
+			`	When you walk into the bar, you're approached by a man, who looks very glad to see you. "Ah you're just the kind of man I'm looking for." he says. "Listen, before retiring here, I used to be a spaceship captain like you. It was nice to slow down for a while, but now I'm itchy to be out there again" he looks upward.  "I've got a ship that was boobytrapped to be impenetrable by anyone but me abandoned in Danoa.  It's cloaking device recently failed, and the pirates have been trying to loot it.  Won't pay much to help me, but I've got a bigger plan that I think you might like."  Want to take an old timer out for an adventure with your fleet?`
+			choice
+				`	"Sure!"`
+					goto os1alt_a
+				`	"Sorry, I'm not really interested in indulging the elderly's delusions of grandeur, right now."`
+					goto os1alt_b
+			label os1alt_b
+			`	"Well.  That's a little disappointing. I'll be here if you change your mind..." he says as you see him visibly shrink along with his excitement.`
+				defer
+			label os1alt_a
+			`	"Glad to hear it," he says. "The <npc> was outfitted with the latest and greatest of the day, and some stuff that most people still don't know exists - I'm sure it's still pretty vicious by today's standards when it's up and running again. I don't want to tell you what we'll lose if the pirates destroy it before we get there."`
+				accept
+	on complete
+		payment 10000
+		dialog
+			`	James is grinning ear to ear when he steps off the <npc>. "You have set in motion great things today, kiddo!" he says, as he hands you <payment>. "Meet me in the bar if you want to hear a tale or two."`
+	on visit
+		dialog "You have reached <planet>, but you left James in the <npc> behind! Better depart and wait for him to arrive in this star system."
+
+
+
+
 
 
 mission "OS2"
@@ -71,7 +124,9 @@ mission "OS2"
 	source Farpoint
 	destination Hippocrates
 	to offer
-		has "OS1: done"
+		or
+			has "OS1: done"
+			has "OS1_alternate: done"
 	npc accompany save
 		personality escort
 		government "Merchant"
